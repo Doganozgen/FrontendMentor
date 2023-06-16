@@ -1,0 +1,36 @@
+html, body{
+    padding: 0;
+    margin:0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:#D6E1F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loyout img{
+    object-fit: contain;
+    border-radius: 10px;
+}
+.loyout{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 300px;
+    /* height: 500px; */
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+.loyout .top{
+    font-size:20px;
+    font-weight: bold;
+    color: hsl(218, 44%, 22%);
+    text-align: center;
+}
+.loyout .bottom{
+    color: hsl(212, 45%, 89%);
+    text-align: center;
+}
