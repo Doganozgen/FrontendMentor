@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(235, 18%, 26%);
+    padding: 0;
+    
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 900px;
+    height: 600px;
+    border-radius:20px;
+    background-color:hsl(0, 0%, 100%) ;
+    padding: 20px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    margin: 200px auto;
+}
+.main{
+ padding: 40px;
+ display: grid;
+ gap: 50px;
+
+}
+
+.container .image{
+    justify-self: end;
+}
+.main h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+.main .list p{
+    margin-bottom: 10px;
+}
+.main .list p img{
+    margin-right: 15px;
+}
+.main .mail {
+    display: flex;
+    flex-direction: column;
+}
+.main .mail  span{
+    color:hsl(234, 29%, 20%) ;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.main .mail input{
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.main button{
+
+    padding: 15px;
+    outline: none;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    font-weight: bold;
+}
+.main .mail input:focus:invalid{
+    border-color: hsl(0, 100%, 50%, 0.2);
+    background-color: hsl(0, 100%, 50%, 0.2);
+}
+
+
+.conclusion{
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    border-radius: 40px;
+    padding: 50px;
+    background-color:hsl(0, 0%, 100%);
+    margin: 200px auto;
+    display: none;
+}
+.conclusion h1{
+    color:hsl(234, 29%, 20%);
+    font-weight: bold;
+    font-size: 50px;
+
+}
+.conclusion p{
+    color:hsl(235, 18%, 26%) ;
+    /* font-weight: bold; */
+}
+.conclusion p .value{
+    font-weight: bold;
+}
+.conclusion a{
+    text-decoration: none;
+    border: 1px solid hsl(234, 29%, 20%);
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: hsl(234, 29%, 20%) ;
+    
+}
+
+@media(max-width:375px){
+.container{
+    height:100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 0px; 
+    margin:0;
+}
+.container .image{
+    src: "./images/illustration-sign-up-mobile.svg";
+    grid-column: 1 / 2;
+    grid-row: 1/2;
+
+}
+
+.conclusion{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0px;
+    padding: 60px 20px;
+    background-color:hsl(0, 0%, 100%);
+    margin:0;
+    display: none;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 100px 100px 100px 1fr;
+    gap: 40px;
+}
+.conclusion a{
+    align-self: flex-end;
+
+    width: 100%;
+    height: 50px;
+}
+
+
+
+
+
+}
+
+

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    font-family: 'Overpass', sans-serif;
+    font-weight: bold;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+h2,p{
+    margin:0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:hsl(216, 12%, 8%) ;
+}
+.loyout{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    background-color: hsl(213, 19%, 18%) ;
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 40px;
+    row-gap: 20px;
+    justify-content: flex-start;
+
+}
+.loyout .top{
+    height:30px;
+    width: 30px;
+    background-color:hsl(217, 12%, 63%,0.3);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.loyout img{
+    height: 15px;
+    width: 15px;
+}
+.loyout .header{  
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+}
+.loyout .main{
+   
+    color:hsl(217, 12%, 63%) ;
+}
+.loyout .radio{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.loyout .radio input[type="radio"]{
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 54%);
+    opacity: 0.2;
+    cursor: pointer;
+    transition: 1s background-color;
+}
+.loyout .radio input[type="radio"]:checked{
+ opacity: 1;
+}
+.loyout .radio input[type="radio"]:hover{
+    background-color:hsl(25, 97%, 53%);
+    opacity: 1;
+}
+.loyout .radio input[type="radio"]::before{
+    content: attr(data-number);
+    display: flex;
+    color: hsl(0, 0%, 100%);
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+}
+.loyout button{
+    padding: 15px 0;
+    color:hsl(0, 0%, 100%);
+    background-color:hsl(25, 97%, 53%) ;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: 500ms color,500ms background;
+}
+.loyout button:hover{
+    background-color:hsl(0, 0%, 100%) ;
+    color:hsl(25, 97%, 53%) ;
+}
+.endLoyout{
+    display: none;
+    flex-direction: column;
+    height: 400px;
+    width: 400px;
+    background-color: hsl(213, 19%, 18%) ;
+    border-radius: 40px;
+    box-sizing: border-box;
+    padding: 40px;
+    row-gap: 20px;
+    justify-content: flex-start;
+    align-items:center;
+}
+.endLoyout .point{
+    color:hsl(25, 97%, 53%);
+    background-color: hsl(216, 12%, 54%, 0.2) ;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+.endLoyout h2{
+    color:hsl(0, 0%, 100%);
+    
+}
+.endLoyout p{
+    color: hsl(216, 12%, 54%);
+    text-align: center;
+    font-weight: normal;
+}
